@@ -1,13 +1,32 @@
 /* Reset CSS */
+
+ 
+
+.class {
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-align: center;
+  
+  
 }
+
+
 
 /* Body and Typography */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "PT Sans Narrow",'Helvetica Neue',Arial,Helvetica,sans-serif;
   line-height: 1.5;
   
   background-color: #ffffff;
@@ -16,6 +35,7 @@ body {
 h1, h2, h3 {
   font-weight: 700;
   margin: 1rem 0;
+  
 }
 
 p {
@@ -25,6 +45,7 @@ p {
 a {
   color: #0099ff;
   text-decoration: none;
+  
 }
 
 ul {
@@ -38,7 +59,8 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
-
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: #0e7612;
 }
 
 .logo {
@@ -59,11 +81,13 @@ body{
 
 nav ul {
   display: flex;
+  text-align: center;
 }
 
 nav li {
-
+text-align: center;
   margin-right: 10px;
+  text-align: center;
 }
 nav li a {
 	display: block;
@@ -73,15 +97,17 @@ nav li a {
 	text-decoration: none;
 }
  nav a {
-    color: #e72a2a;
+    color: #ff0101;
     text-decoration: none;
     transition: all 0.3s ease;
+    text-align: center;
   }
   
   nav a:hover {
     color: #fff;
-    background-color: #e61a1a;
+    background-color: #dc0000;
     border-radius: 5px;
+    text-align: center;
     /* padding: 5px 0px; */
   }
 
@@ -99,6 +125,7 @@ nav li.active {
 /* Main Section */
 main {
   padding: 2rem;
+  width: 100;
 }
 
 .admission {
@@ -129,35 +156,58 @@ main {
 }
 
 .notice-board {
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  margin-top: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .notice-board h2 {
-  color: #f30000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #444;
 }
 
-.notice-board ul li {
-  margin: 1rem 0;
+.notice-board ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.notice-board a {
-  display: block;
-  margin-top: 1rem;
-  text-align: right;
+.notice-board li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.notice-board a:hover {
-  color: #fc0000;
+.notice-board li:last-child {
+  border-bottom: none;
 }
 
+.notice-board h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
 
+.notice-board p {
+  margin: 0;
+  color: #888;
+  font-size: 1rem;
+}
+
+.notice-board .date {
+  font-size: 1rem;
+  color: #999;
+}
 
 .syllabus {
   background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   margin-top: 2rem;
 }
@@ -279,6 +329,7 @@ background-color: #0077cc;
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
+
 }
 
 .notice {
@@ -304,9 +355,13 @@ nav a {
   transition: all 0.3s ease;
 }
 
-nav a:hover {
+li a:hover {
   color: #fff;
   background-color: #e61a1a;
   border-radius: 5px;
   padding: 5px 0px;
+  text-align: center;
+}
+.profile-pic{
+
 }

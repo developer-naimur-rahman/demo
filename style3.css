@@ -12,6 +12,7 @@
   }
   
   .class {
+    text-align: center;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -63,6 +64,7 @@
   }
   
   nav {
+    text-align: center;
     display: flex;
     justify-content: center;
     margin-top: 20px;
